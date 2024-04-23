@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+boby{
+    font-family: "Open Sans", Arial,Sans-serif;
+    font-size: 16px;
+}
+.contenedor{
+    border: 1px solid red;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+/*----------header--------*/
+header{
+    width: 100%;
+    border:3px solid blue;
+    background: url(../imagenes/WhatsApp\ Image\ 2024-04-17\ at\ 19.40.05\ \(3\).jpeg) #422b14;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position:center 0;
+}
+header.contenedor{
+    position: relative;
+    height: 700px;
+}
+header.menu{
+    width: 100px;
+    text-align: right;
+}
+header .menu a{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 40px 20px;
+    text-decoration: none;
+    position: relative;
+}
+header .menu a:hover{
+    text-decoration: underline;
+}
+header .texto{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    margin-top: -52%;
+}
+header .texto .nombre{
+    font-size: 50px;
+    font-weight: 600;
+}
+header .texto .nombre span{
+    font-weight: 300;
+}
+header .texto h3{
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+}
+/*-----------MAIN----------*/
+.main{
+    background: url("/imagenes/WhatsApp\ Image\ 2024-04-17\ at\ 19.40.06.jpeg");
+    background-repeat: repeat;
+}
+.main .acerca-de .contenedor{
+    overflow: visible;
+    position: relative;
+}
+.main .acerca-de .foto{
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    z-index: 0;
+    box-shadow: 0px opx 15px rgba(0,0,0, .35);
+}
