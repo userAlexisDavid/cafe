@@ -7,12 +7,11 @@
 }
 
 body {
-    font-family: "Open Sans", Arial, Sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-size: 16px;
 }
 
 .contenedor {
-    border: 1px solid red;
     width: 90%;
     max-width: 1000px;
     margin: auto;
@@ -54,8 +53,8 @@ header .menu a:hover {
 }
 
 header .texto {
-    width: 100%;
     color: #fff;
+    width: 100%;
     position: absolute;
     top: 50%;
     margin-top: -52px;
@@ -106,7 +105,7 @@ header .texto h3 {
     padding: 40px;
     width: 50%;
     position: relative;
-    top: 500px;
+    top: 100px;
     z-index: 1;
     float: right;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, .35);
@@ -282,3 +281,146 @@ footer .copyright {
     padding: 15px 0;
     color: #fff;
 }
+
+@media screen and (max-width:800px) {
+    header .contenedor {
+        position: static;
+        height: auto;
+    }
+
+    header .texto {
+        position: static;
+        margin: 100px 0;
+    }
+
+    header .menu {
+        text-align: center;
+    }
+
+    header .menu a {
+
+        margin: 10px 20px;
+    }
+
+    header .texto .nombre {
+        font-size: 30px;
+    }
+
+    header .texto h3 {
+        font-size: 18px;
+    }
+
+    .main .acerca-de .foto {
+        width: 100%;
+        position: relative;
+    }
+
+    .main .acerca-de article {
+        position: relative;
+        width: 100%;
+        top: -50px;
+        transform: translate(0px, );
+    }
+
+    .main .menu {
+
+        padding-top: 300px;
+    }
+
+    .main .menu article {
+
+        width: 100%;
+    }
+
+    .main .galeria .foto {
+
+        width: 50%;
+    }
+
+    .main .mapa {
+
+        width: 80%;
+        margin: auto;
+    }
+
+
+
+
+}
+
+@media screen and (max-width:400px){
+
+    header .menu {
+        width: 100%;
+    }
+
+    header .menu a {
+        font-size: 18px;
+        display: inline-block;
+        margin: 20px 10px;
+        position: static;
+    }
+
+    .main .acerca-de article h3 {
+        font-size: 40px;
+    }
+
+    .main .acerca-de article p {
+        line-height: 20px;
+    }
+
+    .main .menu .titulo {
+        font-size: 30px;
+    }
+
+    .main .menu .categoria {
+        font-size: 20px;
+    }
+
+    .main .menu .nombre {
+        font-size: 15px;
+    }
+
+    .main .menu .precio {
+        font-size: 12px;
+    }
+
+    .main .menu .descripcion {
+        font-size: 10px;
+    }
+
+    .main .ubicacion .direccion {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main .ubicacion .direccion {
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .main .ubicacion .direccion .telefono {
+        text-align: center;
+    }
+
+    .main .ubicacion .horarios {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main .ubicacion .horarios h4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .main .ubicacion .horarios .entre-semana,
+    .main .ubicacion .horarios .fin-semana {
+        width: 50%;
+        text-align: center;
+    }
+
+    .main .mapa {
+        width: 100%;
+    }
+}    
